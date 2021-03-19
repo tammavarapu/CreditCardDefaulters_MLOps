@@ -1,0 +1,47 @@
+creditcarddefaulters_project_steps_guide:
+-----------------------------------------
+Create env
+	conda create -n CreditCardDefaulters_ENV python=3.8 -y
+	conda activate CreditCardDefaulters_ENV
+	
+Create project folder :
+	C:\Users\538345\PycharmProjects\ML\CreditCardDefaulters_MLOps
+	
+Create env and project default structure
+	pip install cookiecutter
+	cookiecutter https://github.com/drivendata/cookiecutter-data-science
+	PROJECT_NAME:CreditCardDefaulters_MLOps
+    
+Run req file
+    pip install -r requirements.txt # installed all dependencies 
+    
+Initialize git
+    git init
+    
+Install dvc
+    pip install dvc
+    pip install dvc[gdrive]    
+    dvc init
+
+Run below commands always to commit changes into git
+    git add . && git commit -m "first commit and added raw data"
+    git branch -M main
+    git remote add origin https://github.com/tammavarapu/CreditCardDefaulters_MLOps.git
+    git push -u origin main
+    git checkout -b dev
+ 
+ Pycharm:
+    Open Pycharm IDE with CreditCardDefaulters_MLOps project and configure CreditCardDefaulters_ENV as conda environment.
+    
+AWS login
+    datasciencetraining2021@gmail.com
+    
+AWS profile:
+    aws configure --profile crdt_crd_dfltrs
+    AWS Access Key ID [None]: AKIAXGMYWTTGM7QC7AEE
+    AWS Secret Access Key [None]: 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
+    Default region name [None]:
+    Default output format [None]:
+    
+Coding-Part:
+------------
